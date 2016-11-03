@@ -15,6 +15,8 @@
 		A7CEA09F1DCAE0F800349AB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CEA09D1DCAE0F800349AB8 /* LaunchScreen.storyboard */; };
 		A7CEA0AA1DCAE0F800349AB8 /* GCD_UDPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CEA0A91DCAE0F800349AB8 /* GCD_UDPDemoTests.m */; };
 		A7CEA0B51DCAE0F800349AB8 /* GCD_UDPDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CEA0B41DCAE0F800349AB8 /* GCD_UDPDemoUITests.m */; };
+		A7CEA0C71DCAE12800349AB8 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CEA0C41DCAE12800349AB8 /* GCDAsyncSocket.m */; };
+		A7CEA0C81DCAE12800349AB8 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CEA0C61DCAE12800349AB8 /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A7CEA0B01DCAE0F800349AB8 /* GCD_UDPDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCD_UDPDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CEA0B41DCAE0F800349AB8 /* GCD_UDPDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCD_UDPDemoUITests.m; sourceTree = "<group>"; };
 		A7CEA0B61DCAE0F800349AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7CEA0C31DCAE12800349AB8 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		A7CEA0C41DCAE12800349AB8 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		A7CEA0C51DCAE12800349AB8 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		A7CEA0C61DCAE12800349AB8 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		A7CEA08E1DCAE0F700349AB8 /* GCD_UDPDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A7CEA0C21DCAE11400349AB8 /* CGD */,
 				A7CEA0921DCAE0F700349AB8 /* AppDelegate.h */,
 				A7CEA0931DCAE0F700349AB8 /* AppDelegate.m */,
 				A7CEA0951DCAE0F700349AB8 /* ViewController.h */,
@@ -138,6 +145,17 @@
 				A7CEA0B61DCAE0F800349AB8 /* Info.plist */,
 			);
 			path = GCD_UDPDemoUITests;
+			sourceTree = "<group>";
+		};
+		A7CEA0C21DCAE11400349AB8 /* CGD */ = {
+			isa = PBXGroup;
+			children = (
+				A7CEA0C31DCAE12800349AB8 /* GCDAsyncSocket.h */,
+				A7CEA0C41DCAE12800349AB8 /* GCDAsyncSocket.m */,
+				A7CEA0C51DCAE12800349AB8 /* GCDAsyncUdpSocket.h */,
+				A7CEA0C61DCAE12800349AB8 /* GCDAsyncUdpSocket.m */,
+			);
+			name = CGD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +225,7 @@
 				TargetAttributes = {
 					A7CEA08B1DCAE0F700349AB8 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = U54J3QSAHN;
 						ProvisioningStyle = Automatic;
 					};
 					A7CEA0A41DCAE0F800349AB8 = {
@@ -273,6 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CEA0C71DCAE12800349AB8 /* GCDAsyncSocket.m in Sources */,
+				A7CEA0C81DCAE12800349AB8 /* GCDAsyncUdpSocket.m in Sources */,
 				A7CEA0971DCAE0F700349AB8 /* ViewController.m in Sources */,
 				A7CEA0941DCAE0F700349AB8 /* AppDelegate.m in Sources */,
 				A7CEA0911DCAE0F700349AB8 /* main.m in Sources */,
@@ -424,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U54J3QSAHN;
 				INFOPLIST_FILE = GCD_UDPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cjl.GCD-UDPDemo";
@@ -435,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U54J3QSAHN;
 				INFOPLIST_FILE = GCD_UDPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cjl.GCD-UDPDemo";
